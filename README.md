@@ -8,6 +8,7 @@
 
 - 安裝 [Miniconda](https://docs.anaconda.com/miniconda/)
 - 依據 `environment.yml` 建立環境：
+
 ```bash
 conda env create -f environment.yml
 ```
