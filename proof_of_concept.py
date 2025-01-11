@@ -15,8 +15,6 @@ connection.close()
 # print(plotting_df.shape)
 
 plt.style.use('seaborn-v0_8')
-fig, ax = plt.subplots()
-
 
 '''
 year_to_plot = 2023
