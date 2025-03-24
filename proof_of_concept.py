@@ -7,10 +7,6 @@ connection = sqlite3.connect('data/gapminder.db')
 plotting_df = pd.read_sql('SELECT * FROM plotting;', con=connection)
 connection.close()
 
-connection = sqlite3.connect('data/gapminder.db')
-plotting_df = pd.read_sql('SELECT * FROM plotting;', con=connection)
-connection.close()
-
 plt.style.use('seaborn-v0_8')
 
 fig, ax = plt.subplots()
