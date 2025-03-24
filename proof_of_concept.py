@@ -16,8 +16,8 @@ def update_plot(year_to_plot: int):
     lex = subset_df['life_expectancy'].values
     gdp_pcap = subset_df['gdp_per_capita'].values
     cont = subset_df['continent'].values
-    # africa:green, americas:yellow, asia:blue, europe:pink
-    color_map = {'africa': '#C0FFB3', 'americas': '#FFDA99', 'asia': '#9ECCFE', 'europe': '#FA9DE3'}
+    # africa:blue, americas:green, asia:pink, europe:yellow
+    color_map = {'africa': '#60D2E6', 'americas': '#9AE847', 'asia': '#EC6475', 'europe': '#FBE84D'}
     
     for xi, yi, ci,in zip(gdp_pcap, lex, cont):
         ax.scatter(x=xi, y=yi, color=color_map[ci])
